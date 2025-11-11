@@ -70,7 +70,7 @@ function StackDetailHome() {
   return (
     <Stack.Navigator screenOptions={defaultHeaderOptions}>
       <Stack.Screen name="Home" component={Home} />
-       <Stack.Screen name="ListarClientesMinimal" component={ListarClientesMinimal} />
+       <Stack.Screen name="ListarClientes" component={ListarClientes} />
       <Stack.Screen name="Técnicos Agrícolas" component={TecnicoAgricolas} />
       <Stack.Screen name="Mapa" component={Mapa} />
       <Stack.Screen name="ChatBot" component={ChatBot} />
@@ -87,8 +87,9 @@ function StackDetailHome() {
 function StackClientes() {
   return (
     <Stack.Navigator screenOptions={defaultHeaderOptions}>
+      <Stack.Screen name="ListarClientesMinimal" component={ListarClientesMinimal} />
       <Stack.Screen name="ListarClientes" component={ListarClientes} />
-        <Stack.Screen name="ListarClientesMinimal" component={ListarClientesMinimal} />
+        
       <Stack.Screen name="RegistrarCliente" component={RegistrarCliente} />
     </Stack.Navigator>
   );
@@ -198,3 +199,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
 });
+
+// npx expo start -c

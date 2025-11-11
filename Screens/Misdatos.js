@@ -162,11 +162,7 @@ export default function Misdatos({ navigation }) {
         <Text style={styles.buttonText}>Editar perfil</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button}>
-        <Ionicons name="settings-outline" size={20} color="white" />
-        <Text style={styles.buttonText}>Configuración</Text>
-      </TouchableOpacity>
-
+     
       <TouchableOpacity
         style={styles.buttonLogout}
         onPress={() =>
@@ -201,7 +197,7 @@ export default function Misdatos({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#a3d9a5", alignItems: "center", paddingTop: 50 },
+  container: { flex: 1, backgroundColor: "#ffffffff", alignItems: "center", paddingTop: 50 },
   avatar: { width: 120, height: 120, borderRadius: 60, marginBottom: 15, borderWidth: 3, borderColor: "#fff" },
   name: { fontSize: 22, fontWeight: "bold", color: "#000" },
   role: { fontSize: 16, marginTop: 5, color: "#333" },
