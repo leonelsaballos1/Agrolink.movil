@@ -89,8 +89,7 @@ function StackClientes() {
     <Stack.Navigator screenOptions={defaultHeaderOptions}>
       <Stack.Screen name="ListarClientesMinimal" component={ListarClientesMinimal} />
       <Stack.Screen name="ListarClientes" component={ListarClientes} />
-        
-      <Stack.Screen name="RegistrarCliente" component={RegistrarCliente} />
+     <Stack.Screen name="RegistrarCliente" component={RegistrarCliente} />
     </Stack.Navigator>
   );
 }
