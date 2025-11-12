@@ -217,16 +217,7 @@ export default function ChatbotVoice() {
             textAlignVertical="top"
           />
 
-          <TouchableOpacity
-            onPress={isRecording ? stopRecording : startRecording}
-            style={[styles.button, isRecording && styles.recording]}
-          >
-            <FontAwesome
-              name={isRecording ? "stop" : "microphone"}
-              size={20}
-              color="#fff"
-            />
-          </TouchableOpacity>
+          
 
           <TouchableOpacity onPress={handleSend} style={styles.button}>
             <Ionicons name="send" size={20} color="#fff" />
