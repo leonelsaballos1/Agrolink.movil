@@ -71,6 +71,7 @@ function StackDetailHome() {
     <Stack.Navigator screenOptions={defaultHeaderOptions}>
       <Stack.Screen name="Home" component={Home} />
        <Stack.Screen name="ListarClientes" component={ListarClientes} />
+      <Stack.Screen name="RegistrarCliente" component={RegistrarCliente} />
       <Stack.Screen name="Técnicos Agrícolas" component={TecnicoAgricolas} />
       <Stack.Screen name="Mapa" component={Mapa} />
       <Stack.Screen name="ChatBot" component={ChatBot} />
