@@ -116,17 +116,32 @@ export default function LoginScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  scrollContainer: { flexGrow: 1 },
+  scrollContainer: {
+    flexGrow: 1,
+  },
   container: {
     flex: 1,
-    backgroundColor: "#ffffffff",
+    backgroundColor: "#fff", // fondo blanco
     justifyContent: "center",
     alignItems: "center",
     paddingVertical: 30,
   },
-  logo: { width: 500, height: 120, marginBottom: 20, borderRadius: 60 },
-  title: { fontSize: 28, fontWeight: "bold", marginBottom: 10, color: "#1d2570" },
-  subtitle: { fontSize: 18, marginBottom: 30 },
+  logo: {
+    width: 500,
+    height: 120,
+    marginBottom: 20,
+    borderRadius: 60,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: "700",
+    marginBottom: 10,
+    color: "#1d2570",
+  },
+  subtitle: {
+    fontSize: 18,
+    marginBottom: 30,
+  },
   input: {
     width: "80%",
     backgroundColor: "#fff",
@@ -134,7 +149,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginBottom: 15,
     borderWidth: 1,
-    borderColor: "#000000ff",
+    borderColor: "#000",
   },
   passwordContainer: {
     flexDirection: "row",
@@ -144,10 +159,13 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginBottom: 15,
     borderWidth: 1,
-    borderColor: "#000000ff",
+    borderColor: "#000",
     paddingHorizontal: 10,
   },
-  passwordInput: { flex: 1, padding: 12 },
+  passwordInput: {
+    flex: 1,
+    padding: 12,
+  },
   button: {
     backgroundColor: "#294b29",
     padding: 15,
@@ -164,6 +182,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginBottom: 15,
   },
-  buttonText: { color: "#fff", fontWeight: "bold" },
-  link: { color: "#1d2570", textDecorationLine: "underline" },
+  buttonText: {
+    color: "#fff",
+    fontWeight: "600",
+  },
+  link: {
+    color: "#1d2570",
+    textDecorationLine: "underline",
+  },
 });

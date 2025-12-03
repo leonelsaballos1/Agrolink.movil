@@ -202,8 +202,16 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#fff' },
-  title: { fontSize: 18, fontWeight: 'bold', textAlign: 'center', marginTop: 10 },
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: '700',
+    textAlign: 'center',
+    marginTop: 10,
+  },
   buscador: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -212,15 +220,42 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     margin: 10,
   },
-  icono: { marginRight: 8 },
-  input: { flex: 1, fontSize: 16, paddingVertical: 8 },
-  leyenda: { maxHeight: 50, marginBottom: 5 },
-  checkboxContainer: { flexDirection: 'row', alignItems: 'center', marginHorizontal: 5 },
-  checkboxLabel: { fontSize: 14 },
-  map: { flex: 1, borderRadius: 8 },
-  callout: { width: 200 },
-  calloutTitle: { fontWeight: 'bold', marginBottom: 5 },
-  noResult: { textAlign: 'center', color: 'gray', margin: 10 },
+  icono: {
+    marginRight: 8,
+  },
+  input: {
+    flex: 1,
+    fontSize: 16,
+    paddingVertical: 8,
+  },
+  leyenda: {
+    maxHeight: 50,
+    marginBottom: 5,
+  },
+  checkboxContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: 5,
+  },
+  checkboxLabel: {
+    fontSize: 14,
+  },
+  map: {
+    flex: 1,
+    borderRadius: 8,
+  },
+  callout: {
+    width: 200,
+  },
+  calloutTitle: {
+    fontWeight: '700',
+    marginBottom: 5,
+  },
+  noResult: {
+    textAlign: 'center',
+    color: 'gray',
+    margin: 10,
+  },
   zoomControls: {
     position: 'absolute',
     top: 20,
@@ -235,5 +270,8 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     elevation: 3,
   },
-  zoomText: { fontSize: 20, fontWeight: 'bold' },
+  zoomText: {
+    fontSize: 20,
+    fontWeight: '700',
+  },
 });

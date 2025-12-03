@@ -234,7 +234,10 @@ export default function ChatbotVoice() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#F0F4F8" },
+  container: {
+    flex: 1,
+    backgroundColor: "#F0F4F8", // fondo gris suave
+  },
   message: {
     padding: 10,
     borderRadius: 8,
@@ -261,19 +264,16 @@ const styles = StyleSheet.create({
     borderColor: "#ccc",
     backgroundColor: "#fff",
   },
- input: {
+  input: {
     flex: 10,
-    borderWidth: 10,
+    borderWidth: 1, // ajustado para que no sea demasiado grueso
     borderColor: "#ccc",
     borderRadius: 25,
     paddingHorizontal: 15,
     paddingVertical: 20,
     backgroundColor: "#fff",
-    textAlignVertical: "top", // ✅ Importante en Android
-     // para que no sea tan pequeño
+    textAlignVertical: "top", // importante en Android para multiline
   },
-
-
   button: {
     backgroundColor: "#2F855A",
     paddingHorizontal: 15,
